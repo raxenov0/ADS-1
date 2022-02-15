@@ -8,18 +8,18 @@ bool checkPrime(uint64_t value) {
   if (value == 1) {
     return false;
   }
-  else if (value != 2 && value % 2 == 0) {
-    return false;
-  }
-  else if (value != 3 && value % 3 == 0) {
-    return false;
-  }
-  else if (value != 5 && value % 5 == 0) {
-    return false;
-  }
-  else if (value != 7 && value % 7 == 0) {
-    return false;
-  }
+    else if (value != 2 && value % 2 == 0) {
+      return false;
+    }
+      else if (value != 3 && value % 3 == 0) {
+        return false;
+      }
+        else if (value != 5 && value % 5 == 0) {
+          return false;
+        }
+          else if (value != 7 && value % 7 == 0) {
+            return false;
+          }
   int sqrtValue = sqrt(value);
   for (int i = 2; i <= sqrtValue; i++) {
     if (value % i == 0) return false;
